@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(116, 111, 111);
+  color: white;
+}
+
+
+nav.background {
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+}
+
+#brand {
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+}
+
+#brand img {
+  width: 30px;
+}
+
+#nav-items {
+  display: inline-block;
+  width: 70%;
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#nav-items .nav-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#nav-items .nav-item a {
+  text-decoration: none;
+  color: #c5c5c5;
+  font-weight: bold;
+}
+
+#nav-items .nav-item a:hover {
+  color: white;
+}
+
+/* Main Container */
+.main {
+  width: 100%;
+  padding: 30px;
+}
+
+
+
+.left img {
+  width: 90%; 
+  max-width: 500px; 
+  margin-bottom: 30px;
+}
+
+.main {
+  font-size: 0; 
+  width: 100%;
+  text-align: center;
+}
+
+.left {
+  display: inline-block;
+  width: 60%;
+  background: rgb(116, 111, 111);
+  padding: 30px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 16px; 
+}
+
+
+.right {
+  display: inline-block;
+  width: 35%;
+  
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.tabs button {
+  background-color: rgb(71, 70, 70);
+  color: white;
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.search {
+  width: 90%;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(71, 70, 70);
+  color: white;
+}
+
+.artist-card {
+  background-color: #2a2a2a;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.artist-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.btn {
+ background-color: green;
+    color: black;
+    padding: 0.6rem 2.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+
+
+
+
+
+
+
