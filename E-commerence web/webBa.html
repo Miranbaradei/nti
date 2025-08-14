@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barbie– Merto</title>
+ <link rel="icon" type="image/png" href="img\shopping-cart.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
+  
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css\webBa.css" />
+</head>
+<body>
+ 
+<section class="container py-4">
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a href="#"><img src="img/logo.png" alt="Logo" style="width: 120px;"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+            <i class="bi bi-telephone fs-3 me-1"></i> Contact us 24/7 <br>(+92) 3942 7879
+          </a>
+        </li>
+      </ul>
+
+    
+      <div class="input-group w-auto me-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Category 1</a></li>
+          <li><a class="dropdown-item" href="#">Category 2</a></li>
+          <li><a class="dropdown-item" href="#">Category 3</a></li>
+        </ul>
+        <input type="text" class="form-control" placeholder="Search for products">
+        <button class="btn btn-dark" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+    
+      <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <img src="img/usa.png" alt="USA" style="width: 15px;"> English
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            USD
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-person fs-4"></i> Account</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-heart fs-4"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-cart3 fs-4"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg  border border-dark-subtle">
+  <div class="container-fluid d-flex align-items-center">
+    <a class="btn btn-light me-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      <i class="bi bi-list"></i> Shop by Categories
+    </a>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Homepages
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#"><i class="fa-solid fa-tag"></i> Best Discount</a>
+        </li>
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Recently viewed
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#" class="text-dark te">Home</a></li>
+      <li class="breadcrumb-item"><a href="#" class="text-dark te">Shop</a></li>
+      <li class="breadcrumb-item"><a href="#" class="text-dark te ">Fashion</a></li>
+      <li class="breadcrumb-item"><a href="#" class="text-dark te">Women</a></li>
+      <li class="breadcrumb-item"><a href="#" class="text-dark te">Sports</a></li>
+      <li class="breadcrumb-item active text-body-secondary" aria-current="page">Barbie Baseball Hat Cap Berkshire Fashions New</li>
+    </ol>
+  </nav>
+<div class="row g-0">
+  
+  <div class="col-md-2 p-0 ">
+    <div class="product-thumbs d-flex flex-column">
+      <img src="img/fashion-8.jpg" alt="" class="active-thumb" />
+      <img src="img/fashion-9.jpg" alt="" />
+      <img src="img/fashion-26.jpg" alt="" />
+      <img src="img/fashion-20-1.jpg" alt="" />
+    </div>
+  </div>
+
+  <div class="col-md-6 p-0 ">
+    <div class="main-image-container">
+      <img src="img/fashion-8.jpg" alt="" />
+    </div>
+  </div>
+  
+  
+  
+  <div class="col-md-4 p-3">
+      <p class="text-muted">Zara</p>
+      <h5>Barbie Baseball Hat Cap Berkshire Fashions New</h5>
+      
+      <p>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+          <span class="text-body-tertiary">(0 Reviews)</span>
+          <a href="#" class="text-body-tertiary">Write a review</a>
+        </p>
+        
+        <ul class="list-unstyled mt-3 mb-4">
+            <li><i class="bi bi-check-lg text-success"></i> Unique Design</li>
+            <li><i class="bi bi-check-lg text-success"></i> Premium Material</li>
+            <li><i class="bi bi-check-lg text-success"></i> Classic & Versatile</li>
+        </ul>
+        
+        <h4>$12</h4>
+        
+       <a class="btn btn-success  disabled mb-3" role="button" aria-disabled="true">IN STOCK</a>
+        <div class="d-flex gap-2">
+            <button type="button" class="btn btn-dark w-50">+ ADD TO CART</button>
+            <button type="button" class="btn btn-danger w-50">BUY NOW</button>
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+            <p class="mb-0 text-body-tertiary act"><i class="bi bi-heart"></i> Add to Wishlist</p>
+            <p class="mb-0 text-body-tertiary act"><i class="bi bi-arrow-left-right"></i> Add to compare</p>
+        
+        </div>
+        <hr>
+        <p> <span class="text-body-tertiary">SKU:</span>KGVT48C82S</p>
+        <p> <span class="text-body-tertiary">Categories:</span>Shorts , Skirts</p>
+        <div class="gap-2">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-pinterest"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+
+
+    </div>
+</div>
+</div>
+  
+<div class="row mt-5">
+  <div class="col-12">
+    <a href="" class="fs-3 h ">Description | </a>
+    <a href="" class="fs-3 h">Specifications |</a>
+    <a href="" class="fs-3 h">Reviews(0)</a>
+    
+    <hr>
+  </div>
+
+  <div class="col-6">
+    <p>
+      Compellingly grow performance based mindshare through parallel potentialities. Rapidiously underwhelm top-line catalysts for change before best-of-breed materials. Competently brand timely catalysts for change through sustainable systems. Completely expedite ubiquitous bandwidth after integrated action items. Progressively transform leading-edge supply chains whereas flexible niche markets.
+    </p>
+  </div>
+
+  <div class="col-6">
+    <table class="table table-striped">
+      <tbody>
+        <tr><th>Shipping</th><td>We currently offer free shipping worldwide on all orders over $100.</td></tr>
+        <tr><th>Sizing</th><td>Fits true to size. Do you need size advice?</td></tr>
+        <tr><th>Return & exchange</th><td>If you are not satisfied with your purchase you can return it to us within 14 days for an exchange or refund.</td></tr>
+        <tr><th>Assistance</th><td>Contact us on (+44) 555 88 65, or email us at support@themesky.com</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><h1>Related products</h1></div>
+
+   <div  data-slick='{
+      "slidesToShow": 4,
+      "slidesToScroll": 1,"arrows": true}'>
+      <div class="car" ><img src="img/fashion-4-300x300-1-300x300.jpg" alt="Product 1" class="zoom-img"> 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $250</h4></div>
+      <div class="car"><img src="img/fashion-6-300x300.jpg" alt="Product 2" class="zoom-img"> 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $150</h4></div>
+      <div class="car"><img src="img/fashion-14-300x300.jpg" alt="Product 3" class="zoom-img"> 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $1250</h4></div>
+      <div class="car"><img src="img/fashion-15-3-300x300.jpg" alt="Product 4" class="zoom-img"> 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $1250</h4></div>
+      <div class="car"><img src="img/fashion-26.jpg" alt="Product 5" style="width: 300px; height: 300px;" class="zoom-img"> 
+<p>Lorem ipsum dolor sit amet con</p> 
+<h4 class="bw-bold"> $60</h4></div>
+      <div class="car"><img src="img/fashion-15-4-300x300.jpg" alt="Product 6" class="zoom-img"> 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $90</h4></div>
+    </div>
+</section>
+<footer >
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <img src="img/logofooter.png" alt="Logo" class="mb-3" style="max-width: 150px;">
+        <p><i class="bi bi-geo-alt-fill me-1"></i>29 SE 2nd Ave, Miami, FL, United States</p>
+        <p><i class="bi bi-envelope me-1"></i>info@example.com</p>
+        <p class="fs-4 fw-bold">(+92) 3942 7879</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>SHOPPING</h5>
+        <p>Wishlist</p><p>Shop by Brand</p><p>Offers</p><p>Track Order</p><p>Size Guide</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>INFORMATION</h5>
+        <p>About Us</p><p>Shipping & Returns</p><p>Help</p><p>Gift Cards</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>ACCOUNT</h5>
+        <p>Cart</p><p>My Account</p><p>My Orders</p><p>Wishlist</p><p>Affiliate Program</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h5>Let’s Keep In Touch</h5>
+        <input type="email" class="form-control mb-2" placeholder="Enter your email address" style="background:#000; color:#ddd;">
+        <div>
+          <i class="bi bi-facebook fs-4 me-2"></i>
+          <i class="bi bi-tiktok fs-4 me-2"></i>
+          <i class="bi bi-youtube fs-4 me-2"></i>
+          <i class="bi bi-twitter fs-4 me-2"></i>
+          <i class="bi bi-instagram fs-4"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mt-4 pt-4 border-top">
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-telephone fs-2 me-2"></i>Didn't find what you were looking for?</p>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-emoji-smile fs-2 me-2"></i>How can we help you today?</p>
+        <a href="#">Help Center</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-stop-circle fs-2 me-2"></i>We’d love to hear what you think!</p>
+        <a href="#">Give Feedback</a>
+      </div>
+    </div>
+    <div class=" py-3">
+      <p>Copyright © Merto. All Rights Reserved</p>
+      <div class="pt-3 mx-2 text-end">
+        <i class="fa-brands fa-cc-paypal fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-apple-pay fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-visa fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-discover fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-jcb fs-2 me-2"></i>
+        <i class="fa-brands fa-amazon-pay fs-2 me-2"></i>
+        <i class="fab fa-cc-amex fs-2"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="js/webBa.js"></script>
+</body>
+</html>

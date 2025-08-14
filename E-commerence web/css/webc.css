@@ -1,0 +1,128 @@
+.navbar .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.navbar .bi {
+  vertical-align: middle;
+}
+.nav-link:hover{
+    color:red !important;
+}
+a.active-link{
+    color:black;
+}
+a.active:hover{
+    color:red;
+}
+button.anim:hover{
+    background-color: red;
+}
+
+iframe {
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.fullscreen-map {
+     
+ top: 60px; 
+ left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: calc(100% - 60px); 
+border: none;
+ }
+ footer {
+  width: 100%;
+  background-color: black;
+  font-size: 13px;
+  line-height: 20px;
+  color: white;
+}
+
+.row1 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.colu {
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.white {
+  color: white;
+}
+.hero { 
+  background-color: #f8f9fa;
+ }
+.map-container { 
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+}
+ footer { 
+  background-color: #222; 
+  color: #ddd;
+  padding-top: 2rem;
+ }
+footer a, footer p { 
+  color: #ddd;
+ }
+.footer-links h5 {
+  color: #fff;
+}
+footer p:hover,
+footer span:hover {
+  color: red !important;
+ 
+}
+footer a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateX(5px); 
+
+}
+.card-img-top {
+  opacity: 1;
+  transition: opacity 0.3s ease, border-radius 0.3s ease;
+  border-radius: 5px;
+}
+
+.card:hover .card-img-top {
+  opacity: 0.7;
+  color: red ;
+}
+.contact-info a {
+  color: #000; 
+ 
+  display: inline-block;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.contact-info a:hover {
+  color: red !important;
+  animation: wiggle 0.4s ease-in-out;
+}
+
+
+
+
+

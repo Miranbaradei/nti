@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop – Merto</title>
+  <link rel="icon" type="image/png" href="img/shopping-cart.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css\webshop.css">
+<style>
+  .x{
+    display: none;
+  }
+  #myd:hover .x{
+    display: block;
+  }
+</style>
+</head>
+<body>
+<section class="container my-5">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop – Merto</title>
+  <link rel="icon" type="image/png" href="img/shopping-cart.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a href="#"><img src="img/logo.png" alt="Logo" style="width: 120px;"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+            <i class="bi bi-telephone fs-3 me-1"></i> Contact us 24/7 <br>(+92) 3942 7879
+          </a>
+        </li>
+      </ul>
+
+    
+      <div class="input-group w-auto me-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Category 1</a></li>
+          <li><a class="dropdown-item" href="#">Category 2</a></li>
+          <li><a class="dropdown-item" href="#">Category 3</a></li>
+        </ul>
+        <input type="text" class="form-control" placeholder="Search for products">
+        <button class="btn btn-dark" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+    
+      <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <img src="img/usa.png" alt="USA" style="width: 15px;"> English
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            USD
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-person fs-4"></i> Account</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-heart fs-4"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-cart3 fs-4"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg  border border-dark-subtle">
+  <div class="container-fluid d-flex align-items-center">
+    <a class="btn btn-light me-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      <i class="bi bi-list"></i> Shop by Categories
+    </a>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Homepages
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#"><i class="fa-solid fa-tag"></i> Best Discount</a>
+        </li>
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Recently viewed
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container my-5">
+
+  <nav class="mb-3">
+    <a href="#" class="breadcrumb-link te">Home</a> &gt;
+    <a href="#" class="breadcrumb-link text-decoration-none">Shop</a>
+  </nav>
+
+  <h2 class="mb-4">Shop</h2>
+
+  
+  <div >
+    <button type="button" class="btn btn-light  mb-3  ">Autopart</button>
+    <button type="button" class="btn btn-light   mb-3    ">Beauty & Health</button>
+    <button type="button" class="btn btn-light   mb-3 ">Electronic</button>
+    <button type="button" class="btn btn-light   mb-3  ">Fashion</button>
+    <button type="button" class="btn btn-light mb-3  ">Game Accessories</button>
+    <button type="button" class="btn btn-light mb-3 ">Home & Decor</button>
+
+    <button type="button" class="btn btn-light mb-3 ">Laptop & Computer</button>
+    <button type="button" class="btn btn-light mb-3 ">phone & Tablet</button>
+    <button type="button" class="btn btn-light mb-3 ">TV,Audio-Video</button>
+  </div>
+
+  <div class="row">
+  <aside class="col-md-3 sidebar">
+ 
+      <h4>Colors</h4>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-circle-fill"></i>Black</li>
+        <li><i class="bi bi-circle-fill text-primary"></i>Blue</li>
+        <li > <i class="bi bi-circle-fill text-danger-emphasis"></i>Brown</li>
+        <li> <i class="bi bi-circle-fill text-danger"></i>Burgundy</li>
+        <li><i class="bi bi-circle-fill text-success"></i>Red</li>
+      </ul>
+
+     
+      <h4>Brands</h4>
+      <input type="text" placeholder="Search brands" class="form-control mb-2">
+      <div class="filter-list">
+        <div class="filter-item">
+          <input type="checkbox"  class="hover-check"  id="amazon"><label for="amazon" class="ms-1">Amazon (8)</label>
+        </div>
+        <div class="filter-item">
+          <input type="checkbox" class="hover-check"  id="apple"><label for="apple" class="ms-1">Apple (11)</label>
+        </div>
+      </div>
+
+    
+      <h4>Price</h4>
+      <div>
+  <input type="checkbox" class="hover-check" id="price1"><label for="price1" class="ms-1">$0 - $100</label>
+</div>
+<div>
+  <input type="checkbox"  class="hover-check" id="price2"><label for="price2" class="ms-1">$100 - $200</label>
+</div>
+<div>
+  <input type="checkbox"  class="hover-check" id="price3"><label for="price3" class="ms-1">$200 - $500</label>
+</div>
+<div>
+  <input type="checkbox" class="hover-check"  id="price4"><label for="price4" class="ms-1">$500+</label>
+</div>
+
+      <button  class="btn btn-light" >Min  -</button>
+      <button class="btn btn-light">Max</button>
+      <button  class="btn btn-dark "  style="color:white;">FILTER</button> 
+
+      <h4>Size</h4>
+  <div>
+  <input type="checkbox"  class="hover-check" id="size-us8"><label for="size-us8" class="ms-1">US 8</label>
+</div>
+<div>
+  <input type="checkbox" class="hover-check"  id="size-us9"><label for="size-us9" class="ms-1">US 9</label>
+</div>
+<div>
+  <input type="checkbox" class="hover-check"  id="size-us10"><label for="size-us10" class="ms-1">US 10</label>
+</div>
+<div>
+  <input type="checkbox" class="hover-check"  id="size-us11"><label for="size-us11" class="ms-1">US 11</label>
+</div>
+<div>
+  <input type="checkbox" class="hover-check" id="size-us12"><label for="size-us12" class="ms-1">US 12</label>
+</div>
+<div>
+  <input type="checkbox" class="hover-check"  id="size-xs"><label for="size-xs" class="ms-1">XS</label>
+</div>
+<div>
+  <input type="checkbox"  class="hover-check" id="size-s"><label for="size-s" class="ms-1">S</label>
+</div>
+<div>
+  <input type="checkbox"  class="hover-check" id="size-m"><label for="size-m" class="ms-1">M</label>
+</div>
+<div>
+  <input type="checkbox" class="hover-check"  id="size-l"><label for="size-l" class="ms-1">L</label>
+</div>
+
+
+     <h4>Storage Capacity</h4>
+      <div>
+        <input type="checkbox"  class="hover-check" id="r5"><label for="r5" class="ms-1">
+         128 GB
+        </label>
+     
+      </div>
+       <div>
+        <input type="checkbox" class="hover-check"  id="r6"><label for="r6" class="ms-1">
+          64 GB
+        </label>
+
+      </div>
+
+
+      
+      <h4>Customer Rating</h4>
+      <div>
+  <input type="checkbox" class="hover-check" id="rating5">
+  <label for="rating5" class="ms-1">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    (84)
+  </label>
+</div>
+
+<div>
+  <input type="checkbox" class="hover-check" id="rating4">
+  <label for="rating4" class="ms-1">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    (40)
+  </label>
+</div>
+
+<div>
+  <input type="checkbox" class="hover-check" id="rating3">
+  <label for="rating3" class="ms-1">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    (4)
+  </label>
+</div>
+
+<div>
+  <input type="checkbox" class="hover-check" id="rating2">
+  <label for="rating2" class="ms-1">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    <i class="bi bi-star"></i>
+    (4)
+  </label>
+</div>
+
+    </aside>
+
+    <div class="col-md-9">
+      <div class="row g-0 ">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-heart x "></i>
+          <div class="product-card text-center p-3 h-100 ">
+            <img src="img/fashion-5-300x300.jpg" class="img-fluid" alt="">
+            <div class="card-body  active"  id="myd" >
+              <p class="fs-6">Nike Air Max Unisex SYSTM</p>
+              <p class="fw-bold text-dark">$148</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="product-card text-center p-3 h-100">
+            <img src="img/electronic-30-5-300x300.jpg" class="img-fluid" alt="">
+            <div class="card-body">
+              <p class="fs-6">Apple MacBook Air M1</p>
+              <p class="fw-bold text-dark">$572</p>
+            </div>
+          </div>
+        </div>
+        <i class="bi bi-heart  x"></i>
+         <div class="col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100 ">
+      <img src="img/cosmetics-34-300x300.jpg" class=" img-fluid"  alt="">
+      <div class="card-body">
+        <p class=" fs-6" >KUORA Tinted Facial Sunscreen SPF 50+</p>
+        <p class="fw-bold text-dark">$14</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100  ">
+      <img src="img/electronic-30-6-300x300.jpg" class=" img-fluid"  alt="">
+      <div class="card-body">
+        <p class=" fs-6" >Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD</p>
+        <p class="fw-bold text-dark ">$999</p>
+        <p class="text-muted"><del>$1,536</del></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/fashion-9.jpg" class=" img-fluid " alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6">100% UV Protected Sunglasses For Men</p>
+        <p class="fw-bold text-dark">$123</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/fashion-6-300x300.jpg" class=" img-fluid" alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >LV Women Leather Accent Denim Mini Skirt</p>
+        <p class="fw-bold text-dark">$1,390</p>
+      </div>
+    </div>
+  </div>
+  <div class=" col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/fashion-16-300x300.jpg" class=" img-fluid " alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6">A Different Christmas Knit Holiday Sweater</p>
+        <p class="fw-bold text-dark">$50 - $65</p>
+      </div>
+    </div>
+  </div>
+
+  <div class=" col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/electronic-1-300x300.jpg" class=" img-fluid " alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >MacBook Air with M3 chip, 16GB Unified Memory, 1TB SSD Storage</p>
+        <p class="fw-bold text-dark">$1,399</p>
+      </div>
+    </div>
+  </div>
+   
+
+  <div class=" col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/sa3a.jpg" class=" img-fluid " alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band</p>
+        <p class="fw-bold text-dark">$890 <del class="text-muted ms-2">$950</del></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/furniture-7-300x300.jpg" class="  img-fluid " alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >Milo Brass And Black Metal Lamp Ø18cm x 30cm</p>
+        <p class="fw-bold text-dark">$82</p>
+      </div>
+    </div>
+  </div>
+   <div class=" col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/11-300x300.jpg" class=" img-fluid" alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >Ipad Mini 6 A15 Bionic chip, 8.3 inch, 6th Gen, Wi-Fi, 64GB</p>
+        <p class="fw-bold text-dark">$450 - $650</p>
+      </div>
+    </div>
+  </div>
+
+  <div class=" col-6 col-md-3">
+    <div class=" product-card text-center p-3 h-100">
+      <img src="img/fashion-1-300x300.jpg" class="img-fluid " alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6">Winter New Jacket Loose Retro American Campus</p>
+        <p class="fw-bold text-dark">$160</p>
+      </div>
+    </div>
+  </div>
+
+     <div class=" col-6 col-md-3">
+     <div class="product-card text-center p-3 h-100">
+      <img src="img/electronic-42-300x300.jpg" class=" img-fluid"  alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >Gaming Chair, Ergonomic Computer Office Desk Chair</p>
+        <p class="fw-bold text-dark">$129 <del class="text-muted ms-2">$199</del></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class=" col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/fashion-4-300x300-1-300x300.jpg" class=" img-fluid "  alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >Mens Winter Jacket Collar Warm Cotton, Coat Male Jackets</p>
+        <p class="fw-bold text-dark">$115</p>
+      </div>
+    </div>
+  </div>
+  <div class=" col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/fashion-14-300x300.jpg"  class="  img-fluid " alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6" >Black Velvet Bow Trim Long Sleeve Womens Dresses</p>
+        <p class="fw-bold text-dark">$1,250</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class=" col-6 col-md-3">
+    <div class="product-card text-center p-3 h-100">
+      <img src="img/cosmetics-33.jpg"class="img-fluid" alt="" />
+      <div class="card-body p-3">
+        <p class="fs-6"> Translucent Compact Face Powder - 03 Medium, 0.22 oz</p>
+        <p class="fw-bold text-dark">$9 <del class="text-muted ms-2">$14</del></p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<div class="text-center mt-4">
+        <p>Showing 18 of 210 results</p>
+        <button type="button" class="btn btn-dark anim">+ VIEW MORE</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container-fluid pt-4 ">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <img src="img/logofooter.png" alt="Logo" class="mb-3" style="max-width: 150px;">
+        <p><i class="bi bi-geo-alt-fill me-1"></i>29 SE 2nd Ave, Miami, FL, United States</p>
+        <p><i class="bi bi-envelope me-1"></i>info@example.com</p>
+        <p class="fs-4 fw-bold">(+92) 3942 7879</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>SHOPPING</h5>
+        <p>Wishlist</p><p>Shop by Brand</p><p>Offers</p><p>Track Order</p><p>Size Guide</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>INFORMATION</h5>
+        <p>About Us</p><p>Shipping & Returns</p><p>Help</p><p>Gift Cards</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>ACCOUNT</h5>
+        <p>Cart</p><p>My Account</p><p>My Orders</p><p>Wishlist</p><p>Affiliate Program</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h5>Let’s Keep In Touch</h5>
+        <input type="email" class="form-control mb-2" placeholder="Enter your email address" style="background:#000; color:#ddd;">
+        <div>
+          <i class="bi bi-facebook fs-4 me-2"></i>
+          <i class="bi bi-tiktok fs-4 me-2"></i>
+          <i class="bi bi-youtube fs-4 me-2"></i>
+          <i class="bi bi-twitter fs-4 me-2"></i>
+          <i class="bi bi-instagram fs-4"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mt-4 pt-4 border-top">
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-telephone fs-2 me-2"></i>Didn't find what you were looking for?</p>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-emoji-smile fs-2 me-2"></i>How can we help you today?</p>
+        <a href="#">Help Center</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-stop-circle fs-2 me-2"></i>We’d love to hear what you think!</p>
+        <a href="#">Give Feedback</a>
+      </div>
+    </div>
+    <div class=" py-3">
+      <p>Copyright © Merto. All Rights Reserved</p>
+      <div class="pt-3 mx-2 text-end">
+        <i class="fa-brands fa-cc-paypal fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-apple-pay fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-visa fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-discover fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-jcb fs-2 me-2"></i>
+        <i class="fa-brands fa-amazon-pay fs-2 me-2"></i>
+        <i class="fab fa-cc-amex fs-2"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.hover-check').forEach(checkbox => {
+      checkbox.addEventListener('mouseenter', () => {
+        checkbox.checked = true;
+      });
+    });
+  });
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
+

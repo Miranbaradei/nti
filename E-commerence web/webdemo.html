@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Demo– Merto</title>
+ <link rel="icon" type="image/png" href="img\shopping-cart.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">  
+    <link rel="stylesheet" href="css\webBa.css">
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a href="#"><img src="img/logo.png" alt="Logo" style="width: 120px;"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+            <i class="bi bi-telephone fs-3 me-1"></i> Contact us 24/7 <br>(+92) 3942 7879
+          </a>
+        </li>
+      </ul>
+
+    
+      <div class="input-group w-auto me-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Category 1</a></li>
+          <li><a class="dropdown-item" href="#">Category 2</a></li>
+          <li><a class="dropdown-item" href="#">Category 3</a></li>
+        </ul>
+        <input type="text" class="form-control" placeholder="Search for products">
+        <button class="btn btn-dark" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+    
+      <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <img src="img/usa.png" alt="USA" style="width: 15px;"> English
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            USD
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-person fs-4"></i> Account</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-heart fs-4"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-cart3 fs-4"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary border border-dark-subtle">
+  <div class="container-fluid d-flex align-items-center">
+    <a class="btn btn-light me-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      <i class="bi bi-list"></i> Shop by Categories
+    </a>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Homepages
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link" href="#"><i class="fa-solid fa-tag"></i> Best Discount</a>
+        </li>
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Recently viewed
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="owl-demo" class="owl-carousel owl-theme ">      
+  <div class="item"><img src="C:\Users\miran\Downloads\cat-7.jpg" alt="Owl Image" ><p style="padding-left: 9% ;">Headphones</p></div>
+  <div class="item"><img src="C:\Users\miran\Downloads\cat-8.jpg" alt="Owl Image"><p style="padding-left: 9% ;">bag</p></div>
+  <div class="item"><img src="C:\Users\miran\Downloads\cat-5.jpg" alt="Owl Image"><p style="padding-left: 9% ;">Laptop</p></div>
+  <div class="item"><img src="C:\Users\miran\Downloads\cat-4.jpg" alt="Owl Image"><p style="padding-left: 9% ;">car</p></div>
+  <div class="item"><img src="C:\Users\miran\Downloads\cat-1.jpg" alt="Owl Image"><p style="padding-left: 9% ;">smartphone</p></div>
+  <div class="item"><img src="C:\Users\miran\Downloads\cosmetics-33-300x300.jpg" alt="Owl Image"> <p style="padding-left: 9% ;">MakeUp</p></div>
+ 
+ 
+</div> 
+
+<div class="bg-white border border-black rounded-xl text-center p-2">
+  <p class="text-sm text-gray-800 m-0">
+    Super discount for your 
+    <span class="font-semibold">first purchase</span> 
+    <a href="#" class="text-danger underline font-semibold">COUPON25</a>. 
+    Use discount code in the checkout!
+  </p>
+</div>
+
+
+<div class="carousel-wrapper">
+  <h4 class="fs-3">Flash Deals</h4>
+
+  <div class="see">
+    <a href="#" class="text-dark">See a Product</a>
+  </div>
+
+  <div class="product-carousel"  data-slick='{
+    "slidesToShow": 3,
+    "slidesToScroll": 1,
+    "arrows": true,
+    "dots": false,
+    "responsive":[
+      {"breakpoint":992,"settings":{"slidesToShow":2}},
+      {"breakpoint":768,"settings":{"slidesToShow":1}}
+    ]
+  }'>
+      <div class="car" ><img src="img\cosmetics-33.jpg" alt="Product 1">
+<p>Lorem ipsum dolor sit amet con</p><h4 class="bw-bold"> $250</h4></div>
+
+      <div class="car"><img src="img\automotive-11-300x300.jpg" alt="Product 2" > 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $150</h4></div>
+
+      <div class="car"><img src="img\sa3a.jpg" alt="Product 3" > 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $1250</h4></div>
+
+      <div class="car"><img src="img\electronic-30-6-300x300.jpg" alt="Product 4"> 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $1250</h4></div>
+      <div class="car"><img src="img\furniture-6-300x300.jpg" alt="Product 5" style="width: 300px; height: 300px;" > 
+<p>Lorem ipsum dolor sit amet con</p> 
+<h4 class="bw-bold"> $60</h4></div>
+      <div class="car"><img src="img/fashion-15-4-300x300.jpg" alt="Product 6" > 
+<p>Lorem ipsum dolor sit amet con</p> 
+<h4 class="bw-bold"> $90</h4></div>
+    </div>
+    </div>
+</div>
+
+      
+
+
+ <nav class="container my-5">
+
+  <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+      <h4 class="mb-0">New Arrival</h4>
+    <div class="nav-links d-flex flex-wrap gap-3">
+      <a href="#" class="text-decoration-none text-dark">Fashion</a>
+      <a href="#" class="text-decoration-none text-dark">Phone & Tablet</a>
+      <a href="#" class="text-decoration-none text-dark">Home & Decor</a>
+      <a href="#" class="text-decoration-none text-dark">Beauty & Health</a>
+      <span class="text-body-tertiary">|</span>
+      <a href="#" class="text-decoration-none text-dark">See all Products </a>
+    </div>
+  </div>
+
+<div class="container my-5">
+
+   
+
+  
+    <div class=" row g-0">
+    
+        <div class="col-lg-4 col-md-4 col-4 d-flex">
+            <div class="col  product-card w-100">
+                <div class="product-image-container">
+                    <span class="hot-badge">HOT</span>
+                   
+                    <img src="img\fashion-5-300x300.jpg" style="width:150px; height: 150px;" class="card-img-top" alt="">
+                </div>
+                <div class="col">
+                    <h5 class="card-title">Nike Air Max Unisex SYSTM Men Sneaker Shoes</h5>
+                    <p class="card-text fw-bold">$148</p>
+                    <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="col-lg-4 col-md-4 col-4 d-flex">
+            <div class="col  product-card w-100">
+                <div class="product-image-container">
+                    <img src="img\fashion-9.jpg"  style="width:150px; height: 150px;"  class="card-img-top" alt="">
+                </div>
+                <div class="col">
+                    <h5 class="card-title">100% UV Protected Sunglasses For Men</h5>
+                    <p class="card-text fw-bold">$123</p>
+                    <div class="rating-stars">
+                      <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-4 d-flex">
+            <div class="col product-card w-100">
+                <div class="product-image-container">
+                    <img src="img\fashion-6-300x300.jpg"  style="width:150px; height: 150px;"  class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">LV Women Leather Accent Denim Mini Skirt</h5>
+                    <p class="card-text fw-bold">$1,390</p>
+                    <div class="rating-stars">
+                       <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-4 d-flex">
+            <div class="col product-card w-100">
+                <div class="product-image-container">
+                    <img src="img\fashion-16-300x300.jpg"  style="width:150px; height: 150px;" class="card-img-top" alt="Holiday Sweater">
+                </div>
+                <div class="col">
+                    <h5 class="card-title">A Different Christmas Knit Holiday Sweater</h5>
+                    <p class="card-text fw-bold">$50-$65</p>
+                    <div class="rating-stars">
+                    <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-4 d-flex">
+            <div class="col product-card w-100">
+                <div class="product-image-container">
+                    <img src="img\fashion-1-300x300.jpg"  style="width:150px; height: 150px;"  class="card-img-top" alt="Varsity Jacket">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Winter New Jacket Loose Retro American Campus</h5>
+                    <p class="card-text fw-bold">$160</p>
+                    <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 d-flex">
+            <div class="col product-card w-100">
+                <div class="product-image-container">
+                    <img src="img\fashion-3-300x300.jpg" style="width:150px; height: 150px;"   class="card-img-top" alt="Custom Hat">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Winter Hats with Top Ball Custom Design</h5>
+                    <p class="card-text fw-bold">$17</p>
+                    <div class="rating-stars">
+                      <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
+</div>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner bg-body-tertiary">
+    
+    <!-- Carousel Item 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex align-items-center justify-content-center" style="min-height: 500px;">
+        <!-- Image -->
+        <img src="img/slide-hoodie-1.png" class="img-fluid me-4" alt="..." style="max-width: 50%; height: auto;">
+
+        <!-- Text Card -->
+        <div class="card bg-white p-4" style="max-width: 400px;">
+          <h5 class="card-title">Athletics Embroidered Relaxed Hoodie</h5>
+          
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>64% Cotton,20% polyster</p>
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>Do not dry clean</p>
+          
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>Machine Wash</p>
+          <hr>
+          
+          <p class="fw-bold">$123</p>
+          <a href="#" class="btn btn-dark">Buy Now</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 2 -->
+    <div class="carousel-item">
+      <div class="d-flex align-items-center justify-content-center" style="min-height: 500px;">
+        <img src="img/slide-hoodie-2.png" class="img-fluid me-4" alt="..." style="max-width: 50%; height: auto;">
+        <div class="card bg-white p-4" style="max-width: 400px;">
+           <h5 class="card-title">Athletics Embroidered Relaxed Hoodie</h5>
+          
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>64% Cotton,20% polyster</p>
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>Do not dry clean</p>
+          
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>Machine Wash</p>
+          <hr>
+          <p class="fw-bold">$123</p>
+          <a href="#" class="btn btn-dark">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Item 3 -->
+    <div class="carousel-item">
+      <div class="d-flex align-items-center justify-content-center" style="min-height: 500px;">
+        <img src="img/slide-hoodie-3.png" class="img-fluid me-4" alt="..." style="max-width: 50%; height: auto;">
+        <div class="card bg-white p-4" style="max-width: 400px;">
+             <h5 class="card-title">Athletics Embroidered Relaxed Hoodie</h5>
+          
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>64% Cotton,20% polyster</p>
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>Do not dry clean</p>
+          
+          <p class="card-text"><i class="bi bi-check-lg text-success"></i>Machine Wash</p>
+          <hr>
+          
+          <p class="fw-bold">$123</p>
+          <a href="#" class="btn btn-dark">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+    
+<div class="carousel-wrapper">
+  <h4 class="fs-3">Best Seller</h4>
+
+  <div class="see">
+    <a href="#" class="text-dark">See a Product</a>
+  </div>
+
+  <div class="product-carousel"  data-slick='{
+    "slidesToShow": 3,
+    "slidesToScroll": 1,
+    "arrows": true,
+    "dots": false,
+    "responsive":[
+      {"breakpoint":992,"settings":{"slidesToShow":2}},
+      {"breakpoint":768,"settings":{"slidesToShow":1}}
+    ]
+  }'>
+      <div class="car" ><img src="img/fashion-4-300x300-1-300x300.jpg" alt="Product 1">
+<p>Lorem ipsum dolor sit amet con</p><h4 class="bw-bold"> $250</h4></div>
+
+      <div class="car"><img src="img/fashion-6-300x300.jpg" alt="Product 2" > 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $150</h4></div>
+
+      <div class="car"><img src="img/fashion-14-300x300.jpg" alt="Product 3" > 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $1250</h4></div>
+
+      <div class="car"><img src="img/fashion-15-3-300x300.jpg" alt="Product 4"> 
+<p>Lorem ipsum dolor sit amet con</p> <h4 class="bw-bold"> $1250</h4></div>
+      <div class="car"><img src="img/fashion-26.jpg" alt="Product 5" style="width: 300px; height: 300px;" > 
+<p>Lorem ipsum dolor sit amet con</p> 
+<h4 class="bw-bold"> $60</h4></div>
+      <div class="car"><img src="img/fashion-15-4-300x300.jpg" alt="Product 6" > 
+<p>Lorem ipsum dolor sit amet con</p> 
+<h4 class="bw-bold"> $90</h4></div>
+    </div>
+    </div>
+</div>
+<div class="slider-container">
+    <h3> From Our Blog</h3>
+  
+  <button class="slider-arrow slider-arrow-left">
+    <i class="fas fa-chevron-left"></i> </button>
+
+  <div class="slider-wrapper">
+    
+    <div class="row flex-nowrap slider-content">
+      
+      <div class="col-12 col-md-4 card-slide">
+        <div >
+          <img src="img\blog-1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text text-uppercase text-muted small">Cosmetics <span class="float-end">By Myoui Mina</span></p>
+            <h5 class="card-title">100% Pure & Natural Sage Essential Oil</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-outline-dark fw-bold" style="border-radius: 10px;">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4 card-slide">
+        <div >
+          <img src="img\blog-2.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text text-uppercase text-muted small">Cosmetics <span class="float-end">By Myoui Mina</span></p>
+            <h5 class="card-title">100% Pure & Natural Sage Essential Oil</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-outline-dark  fw-bold" style="border-radius: 10px;">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div class="col-12 col-md-4 card-slide">
+        <div >
+          <img src="img\blog-3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text text-uppercase text-muted small">Electronics <span class="float-end">By Myoui Mina</span></p>
+            <h5 class="card-title">Tips for Cleaning Desktop & Laptop electronics</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-outline-dark fw-bold" style="border-radius: 10px;">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4 card-slide">
+        <div >
+          <img src="img\blog-4.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text text-uppercase text-muted small">Cosmetics <span class="float-end">By Myoui Mina</span></p>
+            <h5 class="card-title">Giorgio Armani Si Intense Eau de Parfum Review</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-outline-dark fw-bold" style="border-radius: 10px;">READ MORE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 card-slide">  
+        <div >
+          <img src="img\blog-5-1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text text-uppercase text-muted small">Car <span class="float-end">By Myoui Mina</span></p>
+            <h5 class="card-title">The Best Affordable Convertible Cars to Rent</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-outline-dark fw-bold" style="border-radius: 10px;">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 card-slide">  
+        <div >
+          <img src="img\blog-6.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text text-uppercase text-muted small">iphone <span class="float-end">By Myoui Mina</span></p>
+            <h5 class="card-title">10 Things to Learn from Apple’s Marketing Strategy</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <a href="#" class="btn btn-outline-dark fw-bold" style="border-radius: 10px;">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <button class="slider-arrow slider-arrow-right">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+  
+</div>
+
+
+
+
+<div class="bg-body-tertiary text-center justify-content-center" style="padding: 60px 30px; font-size: 1.2rem;">
+        <h3>Looking for something else?</h3> 
+     <div class="d-flex justify-content-center my-3">
+        <input type="text" class="form-control form-control-lg w-50" placeholder="Search for products... "style="border-radius: 15px;">
+    </div>
+        <a  class="b" >smartphone    </a>
+        <span class="text-body-tertiary"   > |</span>
+        <a   class="b"  href="">tablet   </a>
+        <span class="text-body-tertiary"   > |</span>  
+        <a    class="b " href="">controller   </a>
+        <span class="text-body-tertiary"   > |</span>
+        <a   class="b "  href=""> furniture   </a>
+        <span class="text-body-tertiary"   > |</span>
+        <a   class="b " href=""> laptop  </a>
+        <span class="text-body-tertiary"   > |</span>
+        <a   class="b "  href=""> playstation   </a>
+        <span class="text-body-tertiary"   > |</span><br><br>
+        <a   class="b "  href=""> womens fashion  </a>
+        <span class="text-body-tertiary"   > |</span> 
+        <a   class="b "  href=""> home & decor </a>
+        <span class="text-body-tertiary"   > |</span> 
+        <a   class="b "   href="">camera   </a>
+    </div>
+    <footer >
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <img src="img/logofooter.png" alt="Logo" class="mb-3" style="max-width: 150px;">
+        <p><i class="bi bi-geo-alt-fill me-1"></i>29 SE 2nd Ave, Miami, FL, United States</p>
+        <p><i class="bi bi-envelope me-1"></i>info@example.com</p>
+        <p class="fs-4 fw-bold">(+92) 3942 7879</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>SHOPPING</h5>
+        <p>Wishlist</p><p>Shop by Brand</p><p>Offers</p><p>Track Order</p><p>Size Guide</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>INFORMATION</h5>
+        <p>About Us</p><p>Shipping & Returns</p><p>Help</p><p>Gift Cards</p>
+      </div>
+      <div class="col-md-2 mb-4 footer-links">
+        <h5>ACCOUNT</h5>
+        <p>Cart</p><p>My Account</p><p>My Orders</p><p>Wishlist</p><p>Affiliate Program</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h5>Let’s Keep In Touch</h5>
+        <input type="email" class="form-control mb-2" placeholder="Enter your email address" style="background:#000; color:#ddd;">
+        <div>
+          <i class="bi bi-facebook fs-4 me-2"></i>
+          <i class="bi bi-tiktok fs-4 me-2"></i>
+          <i class="bi bi-youtube fs-4 me-2"></i>
+          <i class="bi bi-twitter fs-4 me-2"></i>
+          <i class="bi bi-instagram fs-4"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mt-4 pt-4 border-top">
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-telephone fs-2 me-2"></i>Didn't find what you were looking for?</p>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-emoji-smile fs-2 me-2"></i>How can we help you today?</p>
+        <a href="#">Help Center</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <p><i class="bi bi-stop-circle fs-2 me-2"></i>We’d love to hear what you think!</p>
+        <a href="#">Give Feedback</a>
+      </div>
+    </div>
+    <div class=" py-3">
+      <p>Copyright © Merto. All Rights Reserved</p>
+      <div class="pt-3 mx-2 text-end">
+        <i class="fa-brands fa-cc-paypal fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-apple-pay fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-visa fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-discover fs-2 me-2"></i>
+        <i class="fa-brands fa-cc-jcb fs-2 me-2"></i>
+        <i class="fa-brands fa-amazon-pay fs-2 me-2"></i>
+        <i class="fab fa-cc-amex fs-2"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> 
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+<script src="dist/owl.carousel.min.js"></script>
+
+<script src="js/webBa.js"></script>
+</body>
+</html>
